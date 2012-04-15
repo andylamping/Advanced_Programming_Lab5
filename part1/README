@@ -1,0 +1,23 @@
+Andy Lamping
+AML2194
+Lab5
+======
+
+-------
+Part 1
+-------
+mdb-lookup-server-nc-2.c will do the following:
+
+- It has a loop in which it displays a prompt, "port number: ".  It
+  reads the port number typed in by the user and then fork/exec the
+  mdb-lookup-server-nc.sh script using that port number.  It also prints out a
+  message stating that an instance of mdb-lookup-server has started.
+  The message includes the child's process ID and the port
+  number on which it's listening.
+
+- Hitting ENTER on the prompt should simply display another prompt.
+
+- On every iteration, before it displays a prompt, the program checks if
+  any of the child processes have terminated.  It displays the
+  process IDs of all terminated mdb-lookup-server processes along with
+  messages saying that they have terminated. 
